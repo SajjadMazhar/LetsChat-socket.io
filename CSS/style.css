@@ -1,0 +1,47 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  border: 2px solid red;
+  height: 60vh;
+  width: 30vw;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow-y: auto;
+
+}
+
+.message{
+  display: inline-block;
+  background-color: beige;
+  border: 2px solid red;
+  width: 40%;
+  height: 8%;
+  clear: both;
+  font-size: 12px;
+  margin: 13px;
+
+}
+
+.left{
+  float: left;
+  border-radius: 2px 10px 10px 20px;
+}
+
+.right{
+  float: right;
+  border-radius: 10px 2px 20px 10px;
+}
+
+#messageInp{
+  width: 20vw;
+  height: 4vh;
+  font-size: 18px;
+}
+.btn{
+  height: 29px;
+  width: 65px;
+}
