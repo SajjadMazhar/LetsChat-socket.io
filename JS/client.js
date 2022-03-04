@@ -28,8 +28,11 @@ form.addEventListener('submit', (e)=>{
     messageInput.value = '';
 })
 
-const name = prompt("Enter your name to join LetsChat")
-socket.emit('new-user-joined', name)
+document.querySelector(".join-btn").addEventListener("click", (e)=>{
+    const name = prompt("Enter your name to join LetsChat")
+    socket.emit('new-user-joined', name)
+})
+
 
 socket.on('user-joined', name=>{
     append(`${name} joined the chat`, 'right');
